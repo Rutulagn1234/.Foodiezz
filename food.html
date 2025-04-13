@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foodiez</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍕 Foodiez</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Foodiez!</h2>
+        <p>Delicious food delivered to your door.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKqzrE2hZnTGh65h_SlXd8X8V75HXdXC3Eg&s"
+                    alt="Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>$10</p>
+                <button onclick="addToCart('Cheese Pizza', 10)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/burger_resized_a725fa6e-c278-4520-868b-8b61a33540bd.jpg?v=1723657774"
+                    alt="Burger">
+                <h3>Beef Burger</h3>
+                <p>$8</p>
+                <button onclick="addToCart('Beef Burger', 8)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2022/10/GettyImages-1237065105-e1666018462898.jpg?fit=700,466" alt="Fries">
+                <h3>French Fries</h3>
+                <p>$5</p>
+                <button onclick="addToCart('French Fries', 5)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3>Total: $<span id="total">0</span></h3>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Foodiez. All rights reserved.</p>
+    </footer>
+
+    <script src="food.js"></script>
+</body>
+
+</html>
